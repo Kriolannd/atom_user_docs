@@ -1,8 +1,8 @@
 {
-  "name": "atom_docs",
+  "name": "atom_user_docs",
   "version": "0.0.1",
-  "homepage": "https://github.com/Kriolannd/atom_docs",
-  "description": "docs for the project",
+  "homepage": "https://github.com/Kriolannd/atom_user_docs",
+  "description": "user docs for the project",
   "license": "ASE",
   "type": "module",
   "scripts": {
