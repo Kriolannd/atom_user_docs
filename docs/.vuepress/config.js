@@ -6,49 +6,34 @@ export default defineUserConfig({
   lang: 'ru-RU',
   title: 'ВелдБокс',
   description: 'Здесь вы познаете силу',
-  base: '/atom_docs/',
+  base: '/atom_user_docs/',
   theme: hopeTheme({
     darkmode: 'enable',
     navbar: [
       {text: 'Главная', link: '/'},
-      {text: 'Схема БД', link: '/database/'},
-      {text: 'Архитектура', link: '/solution_architecture/'},
-      {text: 'Проект', link: '/project/'},
+      {text: 'Задания', link: '/tasks/'},
+      {text: 'Учебные материалы', link: '/lessons/'},
+      {text: 'Темы', link: '/topics/'},
     ],
     sidebar: [
       '/',
       {
-        text: 'Устройство модели БД',
-        link: '/database/',
-        prefix: '/database/',
+        text: 'Работа с заданиями',
+        link: '/tasks/',
+        prefix: '/tasks/',
         collapsible: true,
       },
       {
-        text: 'Архитектура приложения',
-        link: '/solution_architecture/',
-        prefix: '/solution_architecture/',
+        text: 'Работа с учебными материалами',
+        link: '/lessons/',
+        prefix: '/lessons/',
         collapsible: true,
       },
       {
-        text: 'Схема проекта',
-        link: '/project/',
-        prefix: '/project/',
+        text: 'Работа с темами',
+        link: '/topics/',
+        prefix: '/topics/',
         collapsible: true,
-        children: [
-          "frontend.html",
-          "backend.html"
-        ]
-      },
-      {
-        text: 'Документация API',
-        prefix: '/api/',
-        collapsible: true,
-        children: [
-          "auth.html",
-          "lessons.html",
-          "tasks.html",
-          "topics.html"
-        ]
       }
     ],
   }),
